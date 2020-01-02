@@ -2,3 +2,13 @@ h1 {
   color:white;
 }
 
+.well {
+  height: 100px;
+  width: 18%;
+  color: black;
+}
+
+.alert {
+font-size: 18px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -50,7 +50,7 @@ class App extends Component {
 
     this.setState({
 
-      totalChange: changeDue,
+      totalChange: "$" + changeDue,
 
       // Targeting Twenties only
 
@@ -99,12 +99,9 @@ class App extends Component {
 
   }
 
-
-
   render() {
 
     return (
-
       <div className='container-fluid'>
         <h1>Change Calculator</h1>
         <div className='page-header'></div>
@@ -129,46 +126,46 @@ class App extends Component {
 
           <div className='col-sm-8'>
             <div className='panel panel-default'>
-              <div className='panel-body'>
-                <div className="alert alert-success text-center" role="alert" value={this.state.totalChange}><strong> Great! </strong> Total change due: ${this.state.totalChange}!</div>
-                {/* <div className="alert alert-danger text-center" role="alert"><strong> Danger! </strong> Additional money owed. </div> */}
-
-                <div className='row'>
-                  <div className="col-sm-3 well well-sm  text-center"><strong> Twenties </strong>
-                    <p className='change'>{this.state.twenties}</p>
-                  </div>
-                </div>
-                <div className="col-sm-3 well well-sm text-center"><strong> Tens </strong>
-                  <p className='change'>{this.state.tens}</p>
-                </div>
-                <div>
-                  <div className="col-sm-3 well well-sm text-center"><strong> Fives </strong>
-                    <p className='change'>{this.state.fives}</p>
-                  </div>
-                </div>
-                <div className="col-sm-3 well well-sm text-center"><strong> Ones </strong>
-                  <p className='change'>{this.state.ones}</p>
-                </div>
+              <div className='panel-body'></div>
+              <div className="alert alert-success text-center" role="alert" value={this.state.totalChange}>
+                Total change due:{this.state.totalChange}
               </div>
 
               <div className='row'>
-                <div className="col-sm-2 well well-sm text-center"><strong> Quarters </strong>
-                  <p className='change'>{this.state.quarters}</p>
+                <div className="col-sm-3 well col-sm-offset-2 text-center"><strong> Twenties </strong>
+                  <p className='change'>{this.state.twenties}</p>
+                </div>
+                <div className="col-sm-3 well  text-center"><strong> Tens </strong>
+                  <p className='change'>{this.state.tens}</p>
+                </div>
+                <div>
+                  <div className="col-sm-3 well  text-center"><strong> Fives </strong>
+                    <p className='change'>{this.state.fives}</p>
+                  </div>
+                </div>
+                <div className="col-sm-3 well text-center"><strong> Ones </strong>
+                  <p className='change'>{this.state.ones}</p>
                 </div>
               </div>
-              <div className="col-sm-2 well well-sm text-center"><strong> Dimes </strong>
-                <p className='change'>{this.state.dimes}</p>
-              </div>
-              <div className='col-sm-2 well well-sm text-center'><strong> Nickels </strong>
-                <p className='change'>{this.state.nickels}</p>
-              </div>
-              <div className='col-sm-2 well well-sm text-center'><strong> Pennies </strong>
-                <p className='change'>{this.state.pennies}</p>
+              <div className='row'>
+                <div className="col-sm-3 col-sm-offset-2 well text-center"><strong> Quarters </strong>
+                  <p className='change'>{this.state.quarters}</p>
+                </div>
+                <div className="col-sm-3 well text-center"><strong> Dimes </strong>
+                  <p className='change'>{this.state.dimes}</p>
+                </div>
+                <div className='col-sm-3 well text-center'><strong> Nickels </strong>
+                  <p className='change'>{this.state.nickels}</p>
+                </div>
+                <div className='col-sm-3 well text-center'><strong> Pennies </strong>
+                  <p className='change'>{this.state.pennies}</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
 
 
 
