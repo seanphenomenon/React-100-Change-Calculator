@@ -102,7 +102,7 @@ class App extends Component {
   render() {
 
     return (
-      <div className='container-fluid'>
+      <div className='container'>
         <h1>Change Calculator</h1>
         <div className='page-header'></div>
 
@@ -132,18 +132,18 @@ class App extends Component {
               </div>
 
               <div className='row'>
-                <div className="col-sm-3 well col-sm-offset-2 text-center"><strong> Twenties </strong>
+                <div className="col-xs-3 well col-sm-offset-2 text-center"><strong> Twenties </strong>
                   <p className='change'>{this.state.twenties}</p>
                 </div>
-                <div className="col-sm-3 well  text-center"><strong> Tens </strong>
+                <div className="col-xs-3 well  text-center"><strong> Tens </strong>
                   <p className='change'>{this.state.tens}</p>
                 </div>
                 <div>
-                  <div className="col-sm-3 well  text-center"><strong> Fives </strong>
+                  <div className="col-xs-3 well  text-center"><strong> Fives </strong>
                     <p className='change'>{this.state.fives}</p>
                   </div>
                 </div>
-                <div className="col-sm-3 well text-center"><strong> Ones </strong>
+                <div className="col-xs-3 well text-center"><strong> Ones </strong>
                   <p className='change'>{this.state.ones}</p>
                 </div>
               </div>
