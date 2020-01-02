@@ -10,12 +10,12 @@ const app = express();
 app.use(express.static(path.join(__dirname, '/../public')));
 app.use(express.static(path.join(__dirname, '/../dist')));
 
-app.listen(8888);
+app.listen(3000);
 
-const url = 'http://localhost:8888';
+const url = 'http://localhost:3000';
 
 describe('express', function() {
-  this.timeout(6500);
+  this.timeout(12000);
   beforeEach(() => {
     nightmare = new Nightmare();
   });
